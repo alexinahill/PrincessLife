@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Pilates Vision Board</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffc0cb; /* Pretty pink background */
+            overflow: hidden; /* No scroll bars, images will float around */
+            height: 100vh; /* Full height of the viewport */
+        }
+
+        /* Floating images */
+        .floating-img {
+            position: absolute;
+            border-radius: 20px;
+            width: 150px;
+            animation: float 5s infinite ease-in-out, bounce 4s infinite ease-in-out;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Bouncy floating animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(50px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Each image gets a different animation delay to create a random effect */
+        .img1 { top: 10%; left: 15%; animation-delay: 0s, 0s; }
+        .img2 { top: 20%; right: 10%; animation-delay: 1s, 0.5s; }
+        .img3 { top: 50%; left: 25%; animation-delay: 2s, 1s; }
+        .img4 { top: 70%; right: 30%; animation-delay: 0.5s, 1.5s; }
+        .img5 { top: 30%; left: 60%; animation-delay: 1.5s, 2s; }
+
+        /* Styling for a smooth, motivational message */
+        .motivation {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2em;
+            color: #ff69b4; /* Lovely pink text */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Motivational Text -->
+    <div class="motivation">
+        Pilates is Power 🌸 Stay Strong, Stay Pretty, Stay Motivated 💖
+    </div>
+
+    <!-- Floating Bouncy Images -->
+    <img src="p.jpg" alt="Inspiration 1" class="floating-img img1"> <!-- Replace with your JPG image -->
+    <img src="pp.jpg" alt="Inspiration 2" class="floating-img img2"> <!-- Replace with your JPG image -->
+    <img src="ppp.jpg" alt="Inspiration 3" class="floating-img img3"> <!-- Replace with your JPG image -->
+    <img src="ppppp.jpg" alt="Inspiration 4" class="floating-img img4"> <!-- Replace with your JPG image -->
+    <img src="pppppp.jpg" alt="Inspiration 5" class="floating-img img5"> <!-- Replace with your JPG image -->
+
+</body>
+</html>
